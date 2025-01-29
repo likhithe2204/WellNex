@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Booking - Sign Up</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -76,40 +77,20 @@
             margin-top: 30px;
         }
     </style>
+
 </head>
 
 <body>
     <div class="container">
         <h2>Sign Up</h2>
-        <form id="signup-form">
-            <input type="text" id="username" placeholder="Username">
-            <input type="email" id="email" placeholder="Email">
-            <input type="password" id="password" placeholder="Password">
-            <button type="submit" onclick="return signUp()">Sign Up</button>
+        <form id="signup-form" method="POST" action="signup.php" method="POST">
+            <input type="text" name="username" id="username" placeholder="Username">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <button type="submit">Sign Up</button>
         </form>
         <div id="alert" class="alert">Sign up successful!</div>
         <div class="quote">"Medical Care is Just One Click Away"</div>
     </div>
 
-    <script>
-        function signUp() {
-            var username = document.getElementById('username').value;
-            var email = document.getElementById('email').value;
-            var password = document.getElementById('password').value;
-
-            if (!username || !email || !password) {
-                alert('Please fill in all fields');
-                return false;
-            }
-
-            document.getElementById('alert').style.display = 'block';
-            setTimeout(function () {
-                document.getElementById('alert').style.display = 'none';
-            }, 3000);
-
-            return false;
-        }
-    </script>
 </body>
-
-</html>

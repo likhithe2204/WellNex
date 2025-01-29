@@ -130,7 +130,7 @@
         <h1>Book Your Slot Now & Save Your Time</h1>
     </header>
     <main>
-        <form id="appointment-form">
+        <form id="appointment-form" action="book.php" method="POST">
             <h1>Book Your Appointment</h1>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -144,16 +144,16 @@
             <textarea id="message" name="message" rows="4" required></textarea>
             <input type="submit" value="Book Appointment">
         </form>
-        <div class="appointment-details" id="appointment-details">
+        <!-- <div class="appointment-details" id="appointment-details">
             <p><strong>Appointment Details:</strong></p>
             <p id="detail-name"></p>
             <p id="detail-email"></p>
             <p id="detail-date"></p>
             <p id="detail-time"></p>
             <p id="detail-message"></p>
-        </div>
+        </div> -->
     </main>
-    <script>
+    <!-- <script>
         document.getElementById('appointment-form').addEventListener('submit', function (event) {
             event.preventDefault();
             var name = document.getElementById('name').value;
@@ -170,7 +170,7 @@
 
             document.getElementById('appointment-details').style.display = 'block';
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

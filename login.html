@@ -107,41 +107,40 @@
         <h3 class="text-center">
             <img src="login logo.png" alt="" height="90" width="250" style="background-color:white;border-radius: 10px">
         </h3>
-        <form id="loginForm" action="#" method="POST" onsubmit="return validateForm()">
+        <form id="loginForm" action="login.php" method="POST" onsubmit="return validateForm()">
             <div class="input-group">
                 <i class="fas fa-envelope"></i>
-                <input type="text" name="email_mobile" id="email_mobile" placeholder="Email or Mobile Number" required>
+                <input type="text" name="email" id="email" placeholder="Email" required>
             </div>
             <div class="input-group">
                 <i class="fas fa-lock"></i>
                 <input type="password" name="password" id="password" placeholder="Password" required>
             </div>
 
-            <button type="submit"><a href="main.html">Sign In</a></button>
+            <button type="submit"><a href="main.html">Sign In</button>
             <p class="forgot-password">Forgot your password? <a href="reset.html">Reset here</a></p>
-            <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+           <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>  
         </form>
     </div>
 
     <script>
         function validateForm() {
-            var emailMobile = document.getElementById("email_mobile").value;
-            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
             var password = document.getElementById("password").value;
 
             // Email validation
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(emailMobile)) {
+            if (!emailRegex.test(email)) {
                 alert("Please enter a valid email address.");
                 return false;
             }
 
             // Password validation
-            var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+])(?=.*[a-zA-Z]).{8,}$/;
-            if (!passwordRegex.test(password)) {
-                alert("Password must contain at least 8 characters, including at least one uppercase letter, one lowercase letter, one digit, and one special character.");
-                return false;
-            }
+           // var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+])(?=.*[a-zA-Z]).{8,}$/;
+            // if (!passwordRegex.test(password)) {
+            //     alert("Password must contain at least 8 characters, including at least one uppercase letter, one lowercase letter, one digit, and one special character.");
+            //     return false;
+            // }
 
             return true;
         }
