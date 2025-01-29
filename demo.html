@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Demo Videos</title>
+    <link rel="icon" type="image/x-icon" href="logo.avif">
+    <style>
+        body {
+            background: linear-gradient(90deg, #eff7f6, #c6e2ff);
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background-image: url("demo\ img.jpeg");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        header {
+            background: linear-gradient(45deg, #007bff, #00bfff);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .video-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .video-item {
+            margin: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            animation: glow 2s infinite alternate;
+        }
+
+        .video-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            background: linear-gradient(45deg, #007bff, #00bfff);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+            }
+
+            to {
+                box-shadow: 0 0 20px rgba(0, 123, 255, 1),
+                    0 0 30px rgba(0, 123, 255, 0.8),
+                    0 0 40px rgba(0, 123, 255, 0.6);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Our Recent-Blogs</h1>
+    </header>
+
+    <div class="video-container">
+        <div class="video-item">
+            <h2>DEMO VIDEO 1</h2>
+            <video controls>
+                <source src="What is quality of care.mp4">
+            </video>
+        </div>
+        <div class="video-item">
+            <h2>DEMO VIDEO 2</h2>
+            <video controls>
+                <source src="The Six Dimensions of Healthcare Quality.mp4">
+            </video>
+        </div>
+        <div class="video-item">
+            <h2>DEMO VIDEO 3</h2>
+            <video controls>
+                <source src="Empathy The Human Connection to Patient Care.mp4">
+            </video>
+        </div>
+        <div class="video-item">
+            <h2>DEMO VIDEO 4</h2>
+            <video controls>
+                <source src="Effective Communication in Healthcare Organizations.mp4">
+            </video>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; Appointment - All Rights Reserved | Privacy Policy</p>
+    </footer>
+</body>
+
+</html>

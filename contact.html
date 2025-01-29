@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("home\ .jpeg");
+            backdrop-filter: blur(100);
+            background-repeat: no-repeat;
+            backdrop-filter: blur(100);
+            background-size: cover;
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(45deg, #007bff, #00bfff);
+            color: #fff;
+            text-align: center;
+            backdrop-filter: blur(100);
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            backdrop-filter: blur(100);
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 0;
+            background: linear-gradient(45deg, #090909, #0d0d0e);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            backdrop-filter: blur(100);
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #nav2_part2 {
+            color: black;
+            backdrop-filter: blur(100);
+
+
+        }
+
+        #nav2_part2 ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            color: black;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(100);
+        }
+
+        #nav2_part2 ul li {
+            color: azure;
+            font-size: 18px;
+            margin: 10px;
+            box-shadow: -3px -3px 7px #ffffff,
+                3px 3px 5px #ceced1,
+                inset -3px -3px 7px #ffffff,
+                inset 3px 3px 5px #ceced1;
+            border-radius: 10%;
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        #nav2_part2 ul li:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            height: 80%;
+            border-right: 1px solid #ceced1;
+            top: 10%;
+            right: -5px;
+            backdrop-filter: blur(100);
+        }
+
+        #nav2_part2 ul li a {
+            text-decoration: none;
+            color: black;
+            backdrop-filter: blur(100);
+        }
+
+        #nav2_part2 ul li:hover {
+            transform: scale(1.5);
+            
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="nav2_part2">
+        <ul>
+            <li><a href="main.html">HOME</a></li>&emsp; &emsp;
+            <li><a href="book.html">BOOK YOUR APPOINTMENT HERE</a></li>&emsp; &emsp;
+            <li><a href="services.html">SERVICES</a></li>&emsp; &emsp;
+            <li><a href="demo.html">DEMO VIDEOS</a></li>&emsp; &emsp;
+            <li><a href="login.html">LOG IN </a></li>&emsp; &emsp;
+            <li><a href="contact.html">CONTACT US </a></li>&emsp; &emsp;
+        </ul>
+    </div>
+    <hr>
+
+    <marquee SCROLLAMOUNT="20" behavior="scroll" direction="left">
+        <div id="headCont" style="color: rgb(5, 5, 5); display: flex; align-items: center; justify-content: center;">
+            <h1>Contact Us ; Write to us we'll Call You.</h1>
+        </div>
+    </marquee>
+    <hr>
+
+
+    <form
+        style="width: 650px; margin: 80px auto 50px; padding: 30px; background-color:rgba(112, 194, 249, 0.79); border: 1px solid #ddd; border-radius: 10px;">
+        <div style="margin-bottom: 20px;">
+            <h5 style="text-align: center; text-decoration: underline; ">Contact Us</h5>
+            <label for="name" style="display: block; margin-bottom: 5px;">Name*</label>
+            <input type="text" id="name" name="name" required
+                style="width: 100%; height:5%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="email" style="display: block; margin-bottom: 5px;">Email*</label>
+            <input type="email" id="email" name="email" required
+                style="width: 100%; height:5%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="mobile" style="display: block; margin-bottom: 5px;">Mobile number*</label>
+            <input type="tel" id="mobile" name="mobile" required
+                style="width: 100%;height:5%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="clinic" style="display: block; margin-bottom: 5px;">Clinic/Hospital/Org Name*</label>
+            <input type="text" id="clinic" name="clinic" required
+                style="width: 100%; height:5%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="profession" style="display: block; margin-bottom: 5px;">Profession*</label>
+            <input type="text" id="clinic" name="clinic" required
+                style="width: 100%; height:5%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="city" style="display: block; margin-bottom: 5px;">City*</label>
+            <input type="text" id="city" name="city" required
+                style="width: 100%; height:5%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="country" style="display: block; margin-bottom: 5px;">Country/Region*</label>
+            <input type="text" id="country" name="country" required
+                style="width: 100%; height:5%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        </div>
+
+        <div style="margin-bottom: 40px;">
+            <label for="message" style="display: block; margin-bottom: 5px;">Message*</label>
+            <textarea id="message" name="message" required
+                style="width: 100%; height:10%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+        </div>
+        <button type="submit"
+            style="width: 20%; padding: 10px; background-color: #4CAF50; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+    </form>
+
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2024 Hospital Booking. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

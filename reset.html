@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #b1ddfa;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .reset-container {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        width: 400px;
+    }
+
+    h3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #007bff;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .signup-link {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="reset-container">
+        <h3 class="text-center">
+            <img src="resetlog.png" alt="Reset Logo" height="70" width="100">
+        </h3>
+        <form id="resetForm" onsubmit="return resetPassword()">
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="text" name="email_mobile" id="email_mobile" placeholder="Email or Mobile Number" required>
+            </div>
+
+            <button type="submit">Reset Password</button>
+            <p class="signup-link">Remember your password? <a href="login.html">Sign In</a></p>
+        </form>
+    </div>
+
+    <script>
+        function resetPassword() {
+            var emailMobile = document.getElementById('email_mobile').value;
+            alert('Password reset link sent to ' + emailMobile);
+
+            return false;
+        }
+    </script>
+</body>
+
+</html>

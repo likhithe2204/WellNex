@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    background-image: url("hospitalproject.jpg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-size: cover;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    color: azure;
+}
+#nav1 {
+    display: flex;
+    align-items: CENTER;
+}
+#nav1 i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+#nav2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#nav2_part1 {
+    display: flex;
+    align-items: center;
+}
+
+#nav2_part1 i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#locationDropdown {
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #ceced1;
+    border-radius: 5px;
+}
+
+#nav2_part2 {
+    color: azure;
+    
+}
+
+#nav2_part2 ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    color: #FDFFFC;
+}
+
+#nav2_part2 ul li {
+    color: azure;
+    font-size: 15px;
+    margin: 10px;
+    box-shadow: -3px -3px 7px #ffffff,
+        3px 3px 5px #ceced1,
+        inset -3px -3px 7px #ffffff,
+        inset 3px 3px 5px #ceced1;
+    border-radius: 10%;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#nav2_part2 ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    height: 80%;
+    border-right: 1px solid #ceced1;
+    top: 10%;
+    right: -5px;
+}
+
+#nav2_part2 ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#nav2_part2 ul li:hover {
+    transform: scale(1.5);
+    
+}
+
+marquee {
+    font-size: 14px;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+
+}
+.slide{
+    right:20%;
+}
+.container {
+    display: flex;
+    margin-top: 25px;
+}
+
+#navbar {
+    width: 210px;
+    background-color:rgba(50, 47, 47, 0.839);
+    color: #fff;
+    padding: 20px;
+    position:fixed;
+    border-radius: 15px;
+    height: 700px;
+    overflow-y: auto;
+    transition: width 0.5s ease;
+    display: block;
+}
+
+#navbar:hover {
+    width: 200px;
+}
+
+#main-doc {
+    position: relative;
+    right: 0px;
+    margin-left: 250px;
+    padding: 20px;
+    animation: fadeIn 1s ease;
+    overflow: hidden;
+    width: 1200px;
+}
+
+@media(min-width:1700px) {
+    #main-doc {
+        width: 1550px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 10;
+    }
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+    text-align: center;
+}
+
+a {
+    color: #00c2cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 400;
+    font-size:large;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #00fff7;
+}
+
+.main-section-container {
+    overflow-y: auto;
+    max-height: calc(100vh - 120px);
+}
+
+.main-section {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(222, 208, 208, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.main-section:hover {
+    box-shadow: 0 0 20px rgba(248, 238, 238, 0.2);
+}
+
+.main-section header {
+    margin-bottom: 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.main-section:hover header {
+    color: #ffbb00;
+}
+
+.main-section p {
+    line-height: 1.6;
+}
+.footer
+   {
+   position: fixed;
+   padding:10px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color:white;
+   text-align: center;
+}
+.e-appointment {
+    background-image: url('homepage.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.appointment-content {
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 0 15px;
+}
+
+.appointment-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.appointment-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.appointment-content .btn {
+    padding: 15px 30px;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+#navbartitle{
+    height: 400px;
+    width: 100%;
+    border: 2px solid black;
+    background-image: url("home\ .jpeg");
+}

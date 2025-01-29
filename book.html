@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.avif">
+    <title>Advanced Health Care Appointment Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-image: url("book\ img.jpeg");
+
+        }
+
+        header {
+            background: linear-gradient(135deg, #a2c8f1 0%, #9ddaed 100%);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+
+        }
+
+        main {
+            width: 80%;
+            max-width: 750px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+            border-top: 3px solid #51dbf3;
+            transition: all 0.3s ease;
+        }
+
+        h1 {
+            font-size: 33px;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            margin: 10px 0 5px;
+            display: block;
+            color: #444;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="time"],
+        textarea {
+            width: 100%;
+            padding: 15px;
+            margin-top: 5px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-sizing: border-box;
+            transition: border 0.3s ease-in-out;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="date"]:focus,
+        input[type="time"]:focus,
+        textarea:focus {
+            border-color: #6bcf63;
+            outline: none;
+            box-shadow: 0 0 8px rgba(97, 172, 230, 0.958);
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background: linear-gradient(to right, #339933, #6bcf63);
+            color: white;
+            border: none;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(to right, #6bcf63, #339933);
+        }
+
+        .appointment-details {
+            background-color: #e8f5e9;
+            border-left: 5px solid #6bcf63;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 5px;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                width: 95%;
+                margin: 20px auto;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        form {
+            animation: slideIn 0.5s ease-out forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Book Your Slot Now & Save Your Time</h1>
+    </header>
+    <main>
+        <form id="appointment-form">
+            <h1>Book Your Appointment</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" min="2024-01-01" required>
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <input type="submit" value="Book Appointment">
+        </form>
+        <div class="appointment-details" id="appointment-details">
+            <p><strong>Appointment Details:</strong></p>
+            <p id="detail-name"></p>
+            <p id="detail-email"></p>
+            <p id="detail-date"></p>
+            <p id="detail-time"></p>
+            <p id="detail-message"></p>
+        </div>
+    </main>
+    <script>
+        document.getElementById('appointment-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var date = document.getElementById('date').value;
+            var time = document.getElementById('time').value;
+            var message = document.getElementById('message').value;
+
+            document.getElementById('detail-name').textContent = 'Name: ' + name;
+            document.getElementById('detail-email').textContent = 'Email: ' + email;
+            document.getElementById('detail-date').textContent = 'Date: ' + date;
+            document.getElementById('detail-time').textContent = 'Time: ' + time;
+            document.getElementById('detail-message').textContent = 'Message: ' + message;
+
+            document.getElementById('appointment-details').style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>
