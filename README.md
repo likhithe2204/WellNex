@@ -109,8 +109,11 @@ Likhith Edupuganti
 ## ⭐ Show Your Support
 
 🌟 Star this repo
+
 🍴 Fork this repo
+
 🐛 Submit issues
+
 ✅ Suggest features
 
 
