@@ -35,12 +35,12 @@ cd WellNex
 ```
 
 ### 2. Run Locally (XAMPP)
-# Move folder to XAMPP htdocs directory
-# Start Apache and MySQL from XAMPP Control Panel
-# Create a database named 'wellnex' in phpMyAdmin
-# Import 'wellnex.sql' file into the database
+##### Move folder to XAMPP htdocs directory
+##### Start Apache and MySQL from XAMPP Control Panel
+##### Create a database named 'wellnex' in phpMyAdmin
+##### Import 'wellnex.sql' file into the database
 
-# Then open in browser
+### Then open in browser
 http://localhost/WellNex
 
 ---
@@ -79,9 +79,7 @@ http://localhost/WellNex
 Likhith Edupuganti
 
 📧 Email : likhith_edupuganti@srmap.edu.in
-
 🔗 LinkedIn : https://www.linkedin.com/in/likhithedupuganti/
-
 🌐 Portfolio : https://portfoliobylikhith.netlify.app/
 
 ---
