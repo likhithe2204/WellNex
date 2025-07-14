@@ -47,7 +47,24 @@ http://localhost/WellNex
 
 ## 📁 Folder Structure
 
-<pre> ``` WellNex/ ├── login.html ├── signup.html ├── book.html ├── main.html ├── services.html ├── login.php ├── signup.php ├── book.php ├── mystyle.css └── assets/ ├── login hospital.jpeg ├── book img.jpeg ├── homepage.jpeg └── other images and logos ``` </pre>
+```
+WellNex/
+├── login.html
+├── signup.html
+├── book.html
+├── main.html
+├── services.html
+├── login.php
+├── signup.php
+├── book.php
+├── mystyle.css
+└── assets/
+    ├── login hospital.jpeg
+    ├── book img.jpeg
+    ├── homepage.jpeg
+    └── other images and logos
+```
+
 
 ---
 
@@ -70,7 +87,9 @@ http://localhost/WellNex
 Likhith Edupuganti
 
 📧 Email : likhith_edupuganti@srmap.edu.in
+
 🔗 LinkedIn : https://www.linkedin.com/in/likhithedupuganti/
+
 🌐 Portfolio : https://portfoliobylikhith.netlify.app/
 
 ---
