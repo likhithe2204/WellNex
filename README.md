@@ -17,9 +17,9 @@
 
 ## 🛠️ Tech Stack
 
-| Frontend                      | Backend | Database |
-|------------------------------|---------|----------|
-| HTML5, CSS3, Bootstrap, JavaScript | PHP     | MySQL     |
+| Frontend                           |     Backend     |     Database     |
+|------------------------------------|-----------------|------------------|
+| HTML5, CSS3, Bootstrap, JavaScript | PHP             | MySQL            |
 
 ---
 
