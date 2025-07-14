@@ -47,16 +47,7 @@ http://localhost/WellNex
 
 ## 📁 Folder Structure
 
-├── login.html
-├── signup.html
-├── book.html
-├── main.html
-├── services.html
-├── login.php
-├── signup.php
-├── book.php
-├── mystyle.css
-└── assets/ (images and logos)
+<pre> ``` WellNex/ ├── login.html ├── signup.html ├── book.html ├── main.html ├── services.html ├── login.php ├── signup.php ├── book.php ├── mystyle.css └── assets/ ├── login hospital.jpeg ├── book img.jpeg ├── homepage.jpeg └── other images and logos ``` </pre>
 
 ---
 
