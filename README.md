@@ -40,7 +40,7 @@ cd WellNex
 ##### Create a database named 'wellnex' in phpMyAdmin
 ##### Import 'wellnex.sql' file into the database
 
-### Then open in browser
+##### Then open in browser
 http://localhost/WellNex
 
 ---
