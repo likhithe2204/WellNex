@@ -82,6 +82,18 @@ WellNex/
 
 ---
 
+## 🔮 Future Enhancements
+
+* Admin dashboard for appointment management
+
+* Email/SMS notifications
+
+* Doctor availability calendar
+
+* Upload medical reports
+
+---
+
 ## 👨‍💻 Author
 
 Likhith Edupuganti
@@ -93,5 +105,12 @@ Likhith Edupuganti
 🌐 Portfolio : https://portfoliobylikhith.netlify.app/
 
 ---
+
+## ⭐ Show Your Support
+
+🌟 Star this repo
+🍴 Fork this repo
+🐛 Submit issues
+✅ Suggest features
 
 
